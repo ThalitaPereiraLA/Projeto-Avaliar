@@ -1,0 +1,11 @@
+services:
+  mariadb:
+    image: mariadb:10.2
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: javafxmvc
+      MYSQL_USER: javafxmvc
+      MYSQL_PASSWORD: root
+    restart: on-failure
+    ports:
+      - 3306:3306
